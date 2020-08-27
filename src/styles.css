@@ -1,0 +1,128 @@
+/* body CSS */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+
+body {
+  margin: 0 auto;
+  background-image: url('./rock-stack.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1,
+h2 {
+  color: #4A5859;
+}
+
+
+/* User bookmark CSS */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px dotted #4A5859;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+li {
+  border: 1px solid #4A5859;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+
+/* Form CSS */
+
+textarea,
+select,
+option,
+input,
+button {
+  border-radius: 25px;
+  padding: 0.1rem 0.5rem;
+  font-size: 1rem;
+  color: inherit;
+  margin: 15px;
+  background-color: rgb(174, 215, 243);
+}
+
+select {
+  font-family: FontAwesome, sans-serif;
+  height: 2em;
+  width: 3.5em;
+}
+
+select option {
+  font-size: 1.2em;
+  color: gold;
+  background-color: rgb(191, 202, 231);
+}
+
+.form-box {
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  color: rgb(238, 225, 113);
+  text-shadow: 1px 1px 2px black;  
+}
+
+button,
+input[type="text"] {
+  padding: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+span {
+  padding-bottom: 25px;
+}
+
+
+/* Book mark CSS */
+
+a {
+  color: rgb(132, 243, 191);
+  text-shadow: 1px 1px 2px black;
+}
+
+#bookmark-item {
+  width: 250px;
+}
+
+.bookmarked-pages {
+  padding-bottom: 25px;
+  text-shadow: 1px 1px 2px black;    
+  color: rgb(243, 232, 132);
+}
+
+.description-container {
+  color: rgb(243, 232, 132);
+  text-shadow: 1px 1px 2px black;  
+}
+
+.errorContainer {
+  color: red;
+  font-size: 2em;
+}
+
+#cancel-error {
+  margin-right: 10px;
+}
