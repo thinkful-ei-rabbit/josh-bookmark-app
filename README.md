@@ -1,4 +1,4 @@
-https://thinkful-ei-rabbit.github.io/josh-bookmark-app/
+https://thinkful-ei-rabbit.github.io/josh-bookmark-app/dist
 
 Here are the user stories I have answered with my code.
 
