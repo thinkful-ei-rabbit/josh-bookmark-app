@@ -16,15 +16,14 @@ body {
   margin: 0 auto;
   background-image: url('./rock-stack.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  max-width: 100%;
-  max-height: 100%;
+  background-repeat: no-repeat;  
 }
 
 h1,
 h2 {
-  color: #4A5859;
+  color: #fcfcfc;
+  text-shadow: 1px 1px 2px black;
+  text-align:center;
 }
 
 
@@ -44,6 +43,7 @@ li {
   border: 1px solid #4A5859;
   margin: 0.5em;
   padding: 0.5em;
+  background-color:rgb(255, 255, 255, .7);
 }
 
 
@@ -59,7 +59,10 @@ button {
   font-size: 1rem;
   color: inherit;
   margin: 15px;
-  background-color: rgb(174, 215, 243);
+}
+
+button {
+  background-color: #D3E7F8;
 }
 
 select {
@@ -70,16 +73,16 @@ select {
 
 select option {
   font-size: 1.2em;
-  color: gold;
-  background-color: rgb(191, 202, 231);
+  color: #000000;
+  background-color: #d5e0ff99;
 }
 
 .form-box {
   padding: 0.5rem 0;
   display: flex;
   flex-direction: column;
-  color: rgb(238, 225, 113);
-  text-shadow: 1px 1px 2px black;  
+  color: black;  
+  background-color: rgb(255, 255, 255, .75);  
 }
 
 button,
@@ -99,8 +102,7 @@ span {
 /* Book mark CSS */
 
 a {
-  color: rgb(132, 243, 191);
-  text-shadow: 1px 1px 2px black;
+  color: #065B32;  
 }
 
 #bookmark-item {
@@ -108,14 +110,16 @@ a {
 }
 
 .bookmarked-pages {
-  padding-bottom: 25px;
-  text-shadow: 1px 1px 2px black;    
-  color: rgb(243, 232, 132);
+  padding-bottom: 25px;      
+  color: black;
+}
+
+.bookmarked-star-rating {
+  color: rgb(189 172 20);
 }
 
 .description-container {
-  color: rgb(243, 232, 132);
-  text-shadow: 1px 1px 2px black;  
+  color: black;  
 }
 
 .errorContainer {
@@ -126,3 +130,24 @@ a {
 #cancel-error {
   margin-right: 10px;
 }
+
+
+/* For screens with a wider view */
+@media (min-width:600px) {
+  
+  h1 {
+    text-align:center;
+  }
+  
+  .bookmark-container {
+    max-width: 750px;
+    margin:auto;
+  }
+  
+  .form-box {
+    max-width:750px;
+    margin:auto;
+  }
+
+}
+
