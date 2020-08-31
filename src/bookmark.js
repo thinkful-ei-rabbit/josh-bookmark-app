@@ -34,7 +34,7 @@ const generateNewBookmarkHTML = function() {
   return `
     
         <section class="home-container">
-        <form id="bookmarkForm" class="bookmark-form">
+        <form id="bookmarkForm" class="bookmark-form" aria-label="new-bookmark-form">
           <h1>Add a new bookmark:</h1>
                 <section class="form-box">
                     <label for="bookmark-entry"></label>
@@ -93,9 +93,10 @@ const generateBookmarkElementCondensed = function(bookmark) {
 const generateBookmarkElementExpanded = function(bookmark) {
   let bookmarkTitle = `<span class="bookmarked-pages">${bookmark.title}</span>`;
   if (store.adding) {
-    bookmarkTitle = `
-        <form class="js-edit-bookmark-form">
-            <input name="bookmark-edit" class="bookmark-edit" type="text" placeholder="${bookmark.title}" required/>
+    bookmarkTitle = `      
+        <form class="js-edit-bookmark-form" aria-label="edit-bookmark-title">
+            <label for="edit-bookmark-title"></label>
+            <input name="bookmark-edit" class="bookmark-edit" type="text" placeholder="${bookmark.title}" aria-label="edit-bookmark-title" required/>
             <button type="submit" class="submit-edit js-edit-bookmark">Submit Edit</button>
         </form>`;
   }
@@ -106,7 +107,8 @@ const generateBookmarkElementExpanded = function(bookmark) {
     <span class="bookmarked-star-rating">${bookmark.ratingByStars}</span>
       <section class="link-container"><a href="${bookmark.url}" target="_blank">${bookmark.title}</a></section>    
     <article class="description-container">${bookmark.desc}</article>      
-    <form>
+    
+    <form aria-label="edit-or-delete-bookmark">
       <button class="bookmark-delete js-bookmark-delete">
         <span class="bookmark-label">delete</span>
       </button>
